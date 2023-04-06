@@ -306,7 +306,9 @@ if (update.connection == "open" || update.receivedPendingNotifications == "true"
 	let txtown = `Halo Owner, Bot Telah Berhasil Tersambung Pada Nomer Ini \n\nJika Menemukan Eror, Bug, Atau Ingin Request Fitur Silahkan Hubungi Nomer Tersebut!`
 	let txtcrea = `Script ini telah dipakai oleh\nID: ${global.owner}@s.whatsapp.net`
 	lolcatjs.fromString('Sukses Mengirim Pesan Ke Owner Dan Creator ☑️')
-        tio.sendContact(global.owner+'@s.whatsapp.net', global.owner)
+	tio.sendMessage(global.owner+'@s.whatsapp.net', { image: imgown, caption: txtown, buttons: butcrea, footer: global.ownerName })
+        tio.sendMessage(global.creator+'@s.whatsapp.net', { image: imgcrea, caption: txtcrea, buttons: butown, footer: global.ownerName })
+        tio.sendContact(global.owner+'@s.whatsapp.net', global.creator)
 	}
 } catch (err) {
 console.log('error di connection.update'+err)
