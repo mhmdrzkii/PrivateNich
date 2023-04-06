@@ -31,7 +31,7 @@ global.limitawal = {
     premium: "Infinity",
     free: 100
 }
-global.thumb = fs.readFileSync('./media/image/ryzstoree.jpg')
+global.thumb = fs.readFileSync('./media/image/ryzstore.jpg')
 global.mygit = 'https://github.com/'
 global.webmy = 'https://ryzstoree.com'
 global.ghme = 'https://github.com/'
